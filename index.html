@@ -7,23 +7,31 @@
     <title lang="uk">Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
   
     <!--Top Line-->
-    <header class="header">
-      <div class="conteiner topline">
-        <nav class="header-nav">
+  <header class="header">
+    <div class="conteiner topline">
+       <nav class="header-nav">
           <a href="index.html" class="logo"><span class="web">WEB</span>STUDIO</a>
         <ul class="header-list">
           <li class="header-item"><a href="./index.html" class="link current">Studio</a></li>
           <li class="header-item"><a href="./portfolio.html" class="link">Portfolio</a></li>
           <li class="header-item"><a href="/" class="link">Contacts</a></li>
         </ul>
-      </nav>
+       </nav>
+  <!-- Burger button for Smartphone-->
+     <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+       <svg class="menu-button_icon" width="32" height="22">
+        <use class="icon-menu" href="./imajes/sprite.svg#icon-charm_menu-hamburger"></use>
+        <!--<use  class="icon-cross" href="./icons/icons.svg.svg#icon-close-icon-1"></use> -->
+       </svg>
+     </button>
+
       <ul class="connection-list">
         <li class="connection-item">
           <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
@@ -31,10 +39,11 @@
           <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
         </li>
       </ul>
-     </div>
-    </header>
-    <main>
-      <!--Section-hero-->
+    </div>
+   </header>
+  <main>
+<!--Section-hero
+
 <section class="hero">
          <h1 class="hero-title">Effective Solutions for Your Business</h1>                
         <button data-modal-open type="button" class="button" >Order Service</button>
@@ -46,7 +55,7 @@
            <use href="./imajes/modal.svg#icon-close-icon-1"></use>
          </svg>
       </button>
-     <p class="modal-head">Leave your contacts and we will call you back</p>
+     <h3 class="modal-head">Leave your contacts and we will call you back</h3>
   <form class="modal-form">
    <label class="modal-form-field">
       <span class="modal-form-input-descr">Name*</span>
@@ -101,9 +110,9 @@
     </form>
    </div>
 </div>
-  </section>
+  </section>-->
     
-      <!--Section-Policy-->
+      <!--Section-Policy
    <section class="section policy">
       <div class="conteiner">
         <h2 hidden class="section-title">Policy</h2>
@@ -162,8 +171,8 @@
           </li>
         </ul>
       </div>
-      </section>
-      <!--Section-doing-->
+      </section>-->
+      <!--Section-doing
       <section class="section doing">
         <div class="conteiner">
         <h2 class="section-title">What are we doing</h2>
@@ -194,8 +203,8 @@
           </li>
         </ul>
       </div>
-      </section>
-      <!--Team-->
+      </section>-->
+      <!--Team
     <section class="section team">
       <div class="conteiner">
         <h2 class="section-title">Our Team</h2>
@@ -362,8 +371,8 @@
             </li>
           </ul>
         </div>
-     </section>
-      <!--Section Customers-->
+     </section>-->
+      <!--Section Customers
  <section class="section customers">
   <div class="conteiner">
    <h2 class="customers-title">Customers</h2>
@@ -412,8 +421,60 @@
       </li>
     </ul>
   </div>
- </section>
+ </section>-->
 </main>
+<!--Mobile menu window-->
+  
+<div class="menu-conteiner js-menu-container" id="mobile-menu">
+   <button class="menu-toggle js-close-menu">
+    <svg class="mobile-menu_close-icon" width="24" hight="24">
+      <use class="icon-cross" href="./icons/icons.svg.svg#icon-close-icon-1"></use>
+    </svg>
+   </button>
+ <ul class="mobile-list">
+  <li class="mobile-item"><a href="./index.html">Studio</a></li>
+  <li class="mobile-item"><a href="./portfolio.html">Portfolio</a></li>
+  <li class="mobile-item"><a href="">Contacts</a></li>
+ </ul>
+ <ul class="mobile-connection-list">
+  <li class="connection-item">
+    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+  <li class="connection-item">
+    <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+  </li>
+</ul>
+<ul class="mobile-social-list">
+  <li class="social-item">
+    <a href="" class="social-link">
+    <svg class="icon" width="24" height="24">
+      <use href="./imajes/sprite.svg#icon-instagram"></use>
+      </svg>
+      </a>
+    </li>
+   <li class="social-item">
+    <a href="" class="social-link">
+      <svg class="icon" width="24" height="24">
+       <use href="./imajes/sprite.svg#icon-twitter"></use>
+      </svg>
+    </a>
+   </li>
+    <li class="social-item">
+      <a href="" class="social-link">
+      <svg class="icon" width="24" height="24">
+        <use href="./imajes/sprite.svg#icon-facebook"></use>
+      </svg>
+    </a>
+    </li>
+   <li class="social-item">
+    <a href="" class="social-link">
+      <svg class="icon" width="24" height="24">
+       <use href="./imajes/sprite.svg#icon-linkedin"></use>
+      </svg>
+     </a>
+    </li>
+   </ul>
+  </div>
+<!--Section-footer
     <footer class="footer">
       <div class="conteiner">
         <div class="footer-logo">
@@ -463,56 +524,22 @@
           <p class="footer-form-text">Subscribe</p>
          <input type="email" name="subscribe_email" class="footer-form-email" placeholder="E-mail">
         </span>
-        <span class="footer-form-button-wrapper"> 
           <button type="submit" class="footer-form-button">Subscribe
             <svg class="footer-form-button-icon" width="24" height="24">
               <use href="./icons/plaine.svg#icon-Plaine"></use>
             </svg>
           </button>
-          </span>
         </form>
       </div>
-    </footer>
+    </footer> -->
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js "></script>
+  <script
+   defer
+   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+   crossorigin="anonymous"></script>
  </body>
 </html>
 
 
-
-
-
-
-     <!--- Sample
-      <li class="social__item">
-          <a href="" class="social__link">
-              <svg class="social__icon">
-                  <use xlink:href="#facebook"></use>
-              </svg>
-          </a>
-      </li>
-      <li class="social__item">
-          <a href="" class="social__link">
-              <svg class="social__icon">
-                  <use xlink:href="#twitter"></use>
-              </svg>
-          </a>
-      </li>
-  </ul>
-
-  <svg>
-      <symbol viewBox="0 0 448 512" id="instagram">
-          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-      </symbol>
-
-      <symbol viewBox="0 0 448 512" id="facebook">
-          <path d="m279.14 288 14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-      </symbol>
-*/
-
- /*-- 2nd way for fake-checkbox
- <span class="modal-form-fake-checkbox">
-            <svg  class="icon" width="16" height="16">
-              <use href="./imajes/sprite.v-mark.svg"></use>
-            </svg>
-          </span>
- -->      
