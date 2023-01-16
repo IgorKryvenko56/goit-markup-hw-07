@@ -129,7 +129,19 @@ body {
   margin-right:auto;
 }
 }
-@media screen and (min-width:768px) {
+
+@media screen and (min-width: 767px) {
+  .menu-button_icon {
+    display: none ;
+  }
+  .menu-conteiner {
+  display: none;
+  }
+.menu-toggle.js-open-menu {
+  display: none;
+  }
+ }
+ @media screen and (min-width:768px) {
 .conteiner {
    width: 766px;
  }
@@ -922,17 +934,7 @@ fill:var(--hover-color);
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
- @media screen and (min-width: 767px) {
-  .menu-button_icon {
-    display: none ;
-  }
-  .menu-conteiner {
-  display: none;
-  }
-.menu-toggle.js-open-menu {
-  display: none;
-  }
- }
+ 
 
 .header {
  padding-top:24px;
