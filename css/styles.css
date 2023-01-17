@@ -132,7 +132,7 @@ body {
 
 @media screen and (min-width: 767px) {
   .menu-button_icon {
-    display: none ;
+    display:none ;
   }
   .menu-conteiner {
   display: none;
@@ -218,24 +218,27 @@ body {
   .menu-conteiner.is-open {
     transform: translateX(0);
   }
-  .mobile-menu_conteiner {
+  .conteiner.mobile-menu_conteiner {
     position: relative;
     padding-left:0;
     padding-top:80px ;
     padding-bottom:40px;
     margin-top: -16px;
+    margin-left: 80px;
     height: 796px;
   }
-  
-  .menu-toggle.js-close-menu{
+   
+  .menu-toggle.js-close-menu {
    position: absolute; 
-   display: inline-flex;
+   display: flex;
    align-items: center;
-   justify-content: flex-end; 
-   top: -25px;
-   right:13px ;
-   background-color: transparent;
-   border: none;
+   justify-content: center; 
+   top: 40px;
+   right:7px ;
+   width: 24px;
+   height: 24px;
+   background-color:#E7E9FC;
+   border: 1px solid #0000001A;
    border-radius: 50%;
   }
   .menu-toggle.js-open-menu {
@@ -250,12 +253,20 @@ body {
       background-color:#4D5AE5;
   }
   .mobile-list {
-   text-decoration: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 284px;
+    margin-left: 0;
+    
   }
-  .mobile-list .mobile-item {
+  .mobile-list .link {
+   text-decoration: none;
+  
+  }
+  .mobile-list .mobile-item:not(last-child) {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 600;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -268,11 +279,13 @@ body {
     margin-left: 0;
     padding-left: 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-  
   }
-
+   .mobile-connection-list {
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+   }
 .mobile-connection-list .connection-item  {
     font-family: Roboto;
     font-size: 36px;
@@ -286,8 +299,8 @@ body {
 .mobile-connection-list .link.mail {
 font-family: Roboto;
 font-size: 20px;
-font-weight: 500;
-line-height: 24px;
+font-weight:600;
+line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: left;
 color: #434455;
@@ -298,24 +311,20 @@ text-decoration: none;
 }
 .mobile-media-list {
  display: flex;
- justify-content: center;
+ justify-content: space-between;
  margin-top: 40px;
- gap: 40px;
+ 
 
 }
 .media-item {
-display: flex;
-justify-content: center;
-align-items: center;
 width: 40px;
 height: 40px;
 text-decoration: none;
 }
 .media-link {
-  
  display: flex;
+ align-items: center;
  justify-content: center;
-  align-items: center;
   padding: 8px;
   width: 40px;
   height: 40px;
@@ -786,11 +795,10 @@ fill:var(--hover-color);
 
  /*--Mobile FOOTER--*/
  .footer {
+  padding: 100px 0;
    background-color:var(--nav-color);
  }
- .footer .conteiner {
-  padding: 100px 0;
-}
+
 .footer-logo {
   text-align: center;
   margin-bottom: 72px;
@@ -1079,8 +1087,8 @@ color:var(--nav-color) ;
 color:var(--title-text-color);
 }
 .connection-item {
-font-size: 16px;
-line-height: 1.5;
+font-size: 12px;
+line-height: 1.33;
 letter-spacing: 0.02em;
 color: #2E2F42;
 }
@@ -1610,13 +1618,20 @@ height: 40px;
   /*--Footer--*/
   
   .footer {
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 0 ;
+    padding-right: 0;
     background-color:var(--nav-color);
   }
-  .footer .conteiner {
+   .footer .conteiner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding-left:108px;
+  }
+  .footer-logo {
+    display: block;
+
   }
   .footer .logo {
     font-family: 'Raleway',sans-serif;
@@ -1628,6 +1643,7 @@ height: 40px;
     color:var(--cloud-color);
     text-transform: uppercase;
     min-width: 115px;
+    
   }
    .web {
     font-family: 'Raleway',sans-serif;
@@ -1700,11 +1716,14 @@ height: 40px;
       /*Footer Form-Tablet */
  .footer-form-wrapper {
   display: flex;
-  align-items: flex-end;
+  
   margin-top: 72px;
+  padding-left: 0;
+  margin-left: 0;
 }
   
 .footer-form-text {
+ margin-top: 0;
  margin-bottom: 16px;
  font-family: 'Roboto', sans-serif;
  font-size: 16px;
@@ -1713,6 +1732,7 @@ height: 40px;
  letter-spacing: 0.02em;
  color: #FFFFFF;
 }
+
 .footer-form-email {
   display: flex;
   width: 264px;
@@ -1746,6 +1766,7 @@ height: 40px;
  cursor: pointer;
  margin-top: 40px;
  margin-left: 24px;
+ 
 
  
 
