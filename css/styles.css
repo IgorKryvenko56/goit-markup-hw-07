@@ -207,7 +207,7 @@ body {
     top: 0;
     left: 0;
     z-index: 999;
-    background-color:var(--cloud-color);
+    background-color: #FFFFFF;
     box-shadow: 0px 2px 1px #F4F4FD;
     z-index: 999;
     transform: translateX(100%);
@@ -259,6 +259,11 @@ body {
     
   }
   .mobile-list .link {
+   color: #2E2F42;
+   text-decoration: none;
+  }
+  .mobile-list .link-current {
+   color: #404BBF;
    text-decoration: none;
   
   }
