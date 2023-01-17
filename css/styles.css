@@ -249,6 +249,9 @@ body {
   .menu-toggle.js-close-menu:focus {
       background-color:#4D5AE5;
   }
+  .mobile-list {
+   text-decoration: none;
+  }
   .mobile-list .mobile-item {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -267,6 +270,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+  
   }
 
 .mobile-connection-list .connection-item  {
@@ -277,6 +281,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin-bottom:40px;
+    
   }
 .mobile-connection-list .link.mail {
 font-family: Roboto;
@@ -286,13 +291,17 @@ line-height: 24px;
 letter-spacing: 0.02em;
 text-align: left;
 color: #434455;
-
+text-decoration: none;
+}
+.mobile-connection-list .link {
+  text-decoration: none;
 }
 .mobile-media-list {
  display: flex;
  justify-content: center;
  margin-top: 40px;
  gap: 40px;
+
 }
 .media-item {
 display: flex;
@@ -300,8 +309,10 @@ justify-content: center;
 align-items: center;
 width: 40px;
 height: 40px;
+text-decoration: none;
 }
 .media-link {
+  
  display: flex;
  justify-content: center;
   align-items: center;
